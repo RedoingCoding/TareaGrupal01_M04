@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Empresas e Importaciones</title>
+  </head>
+  <body>
+    <h1>Agregar Empresa</h1>
+    <form id="empresaForm">
+      <label for="empresaId">ID:</label>
+      <input type="text" id="empresaId" required /><br />
+      <label for="empresaNombre">Nombre:</label>
+      <input type="text" id="empresaNombre" required /><br />
+      <label for="empresaRut">RUT:</label>
+      <input type="text" id="empresaRut" required /><br />
+      <button type="submit">Agregar Empresa</button>
+    </form>
+
+    <h1>Agregar Importación</h1>
+    <form id="importacionForm">
+      <label for="producto">Producto:</label>
+      <input type="text" id="producto" required /><br />
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" required /><br />
+      <label for="precioUnitario">Precio Unitario:</label>
+      <input type="number" id="precioUnitario" required /><br />
+      <button type="submit">Agregar Importación</button>
+    </form>
+
+    <h2>Resultados</h2>
+    <p id="sumaImportaciones"></p>
+    <p id="totales"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
